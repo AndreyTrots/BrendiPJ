@@ -147,7 +147,7 @@ body{
 @media (max-width: 500px) {
 	.carousel-caption h5
 	 {
-		font-size: 45px;
+		font-size: 40px;
 	}
 	.carousel-caption p {
 		font-size: 35px;
@@ -658,5 +658,225 @@ margin-bottom: 0;
 	}
 	p{
 		font-size: 18px;
+	}
+}
+
+/*Let’s Discuss*/
+.discuss-wrapper {
+width:100%;
+margin-bottom: 100px;
+}
+.discuss-header {
+	@include headers;
+	width: 100%;
+	margin-top: 100px;
+	span{
+	background: url('../../images/sprite.png') no-repeat -129px -20px;
+	width: 18px;
+	height: 14px;
+	margin-top: 10px;
+	}
+}
+.discuss-head {
+	margin-bottom: 80px;
+	text-align:center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #384d5c;
+}
+.address {
+   color: black;
+   h3{
+   	font-size: 22px;
+   	padding-bottom: 44px;
+   }
+	address {
+		font-size: 13px;
+		padding-right: 80px;
+		line-height: 23px;
+		color: #6a737b;
+	}
+}
+.form-section {
+ 	input[type="text"]{
+ 	width: 100%;
+ 	border: none;
+ 	border-bottom: 1px solid #cccccc;
+ 	padding-bottom: 20px;
+ 	margin-bottom: 20px;
+ }
+ textarea {
+ 	width: 100%;
+	border: none;
+ 	border-bottom: 1px solid #cccccc;
+ 	height: 77px;
+ 	padding-top: 34px;
+ 	resize: none;
+ 	margin-bottom: 37px;
+ }
+ textarea::placeholder,
+ input[type="text"]::placeholder {
+	font-size: 13px;
+ }
+}
+@media (max-width: 518px){
+	.be
+		a{
+		float:left;
+	}
+}
+.send-message {
+	float:right;
+
+	span {
+	background: url('../../images/sprite.png') no-repeat -226px -121px;
+	width: 23px;
+	height: 16px;
+	position: absolute;
+	left: -35px;
+	top: 4px;
+
+	}
+	strong {
+		display: block;
+		position: relative;
+	}
+	a {
+		text-decoration: none;
+		color: #111111;
+	}
+}
+.icon-discuss {
+	display: block;
+	a {
+		
+		margin-bottom: 25px;
+	}
+	.be {
+	background: url('../../images/sprite.png') no-repeat -12px -169px;
+	width: 26px;
+	height: 17px;
+	display: block;
+	}
+	.twitter {
+	background: url('../../images/sprite.png') no-repeat -50px -169px;
+	width: 26px;
+	height: 22px;
+	display: block;
+	}
+	.ball {
+	background: url('../../images/sprite.png') no-repeat -86px -167px;
+	width: 26px;
+	height: 26px;
+	display: block;
+	}
+	.tree {
+	background: url('../../images/sprite.png') no-repeat -122px -167px;
+	width: 23px;
+	height: 26px;
+	display: block;
+	}
+	.google {
+	background: url('../../images/sprite.png') no-repeat -157px -169px;
+	width: 15px;
+	height: 23px;
+	display: block;
+}
+	}
+
+/*map*/
+
+.map {
+	border-bottom:5px solid #062033;
+	img{
+	width: 100%;
+	}
+}
+
+
+/*FOOTER*/
+
+.footer-wrapper {
+	background: #1ea78d;
+	padding-top: 98px;
+}
+.brandi{
+	h1{
+font: 28px 'Pacifico', cursive;
+	}
+	p {
+		font-size: 13px;
+		line-height: 25px;
+	}
+}
+.subscribe,
+.explore
+ {
+	h2{
+		font-size: 14px;
+		font-weight: 600;
+		color: rgba(255,255,255,0.6);
+		margin-bottom: 47px;
+	}
+	input[type="search"]{
+		width: 100%;
+		height: 42px;
+		border:2px solid #fff;
+		background: #1ea78d;
+		border-radius: 5px;
+		position:relative;
+		padding-right: 35px;
+		margin-bottom: 22px;
+	}
+	span {
+		background: url('../../images/sprite.png') no-repeat -12px -208px;
+		width: 18px;
+		height: 13px;
+		position:absolute;
+		right: 30px;
+		top: 78px;
+	}
+}
+.explore {
+	h2 {
+		margin-bottom: 35px;
+		padding-left: 14px;
+	}
+}
+.explore-section {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li{
+		line-height: 30px;
+		font-size: 13px;
+	}
+
+}
+.created {
+	margin-top: 47px;
+	strong{
+		font-size: 13px;
+		font-weight: 400;
+		margin-bottom: 55px;
+    	display: block;
+		}
+	span {
+		background: url('../../images/sprite.png') no-repeat -129px -20px;
+		width: 18px;
+		height: 14px;
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		}
+	b {
+		color: #062033;
+	}
+	p {
+		color: #062033;
 	}
 }
