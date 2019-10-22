@@ -7161,6 +7161,9 @@ body {
 .carousel-caption h5 {
   font-size: 62px;
   font-weight: 300; }
+  @media (max-width: 600px) {
+    .carousel-caption h5 {
+      font-size: 45px; } }
 
 .carousel-caption b {
   font-weight: 400; }
@@ -7168,6 +7171,9 @@ body {
 .carousel-caption p {
   font-weight: 300;
   font-size: 48px; }
+  @media (max-width: 600px) {
+    .carousel-caption p {
+      font-size: 35px; } }
 
 .carousel-caption strong {
   color: #0fda93; }
@@ -7199,14 +7205,9 @@ body {
   font-weight: 300;
   width: 100%;
   text-align: center; }
-
-@media (max-width: 500px) {
-  .carousel-caption h5 {
-    font-size: 40px; }
-  .carousel-caption p {
-    font-size: 35px; }
-  .carousel-caption {
-    bottom: 20%; } }
+  @media (max-width: 600px) {
+    .carousel-caption h6 {
+      font-size: 16px; } }
 
 .icon-header {
   margin-top: 100px; }
@@ -7254,6 +7255,11 @@ body {
   color: black;
   padding-top: 75px;
   margin-bottom: 70px; }
+  @media (max-width: 600px) {
+    .features-wrapper {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      padding-top: 35px; } }
 
 .features-header {
   margin: auto;
@@ -7261,6 +7267,9 @@ body {
   height: 70px;
   overflow: hidden;
   margin-bottom: 70px; }
+  @media (max-width: 600px) {
+    .features-header {
+      margin-bottom: 20px; } }
   .features-header h1 {
     text-align: center;
     font-weight: 800;
@@ -7421,12 +7430,15 @@ body {
   padding: 0; }
 
 .flex-hover li {
+  flex-shrink: 1;
+  flex-basis: 25%;
   position: relative;
   display: inline-block; }
 
 .flex-hover li img {
   display: inline-block;
-  background-size: cover; }
+  background-size: cover;
+  max-width: 100%; }
 
 .flex-text {
   position: absolute;
@@ -7500,7 +7512,8 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border: none; }
   .flex-card strong {
     color: #062033;
     font-size: 18px;
@@ -7530,7 +7543,8 @@ body {
     color: #fff; }
 
 .card {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border: none; }
 
 @media (max-width: 1170px) {
   .flex-card {
@@ -7574,18 +7588,15 @@ body {
   padding-top: 100px;
   padding-bottom: 160px; }
 
-@media (max-width: 700px) {
-  .icon-facts {
-    max-width: 400px;
-    margin: auto; }
-  .delivered,
-  .awards {
-    margin-top: 70px; }
-  .time,
-  .clients,
-  .delivered,
-  .awards {
-    font-size: 40px; } }
+.delivered,
+.awards {
+  margin-top: 70px; }
+
+.time,
+.clients,
+.delivered,
+.awards {
+  font-size: 40px; }
 
 .facts-header {
   margin: auto;
@@ -7637,6 +7648,10 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
+  @media (max-width: 700px) {
+    .icon-facts {
+      max-width: 400px;
+      margin: auto; } }
 
 .time {
   width: 147px;
@@ -7746,6 +7761,9 @@ body {
 .discuss-wrapper {
   width: 100%;
   margin-bottom: 100px; }
+  @media (max-width: 600px) {
+    .discuss-wrapper {
+      margin-bottom: 30px; } }
 
 .discuss-header {
   margin: auto;
@@ -7806,11 +7824,18 @@ body {
   .address h3 {
     font-size: 22px;
     padding-bottom: 44px; }
+    @media (max-width: 600px) {
+      .address h3 {
+        text-align: center; } }
   .address address {
     font-size: 13px;
     padding-right: 80px;
     line-height: 23px;
     color: #6a737b; }
+    @media (max-width: 600px) {
+      .address address {
+        text-align: center;
+        padding-right: 0; } }
 
 .form-section input[type="text"] {
   width: 100%;
@@ -7832,12 +7857,13 @@ body {
 .form-section input[type="text"]::placeholder {
   font-size: 13px; }
 
-@media (max-width: 518px) {
-  .be a {
-    float: left; } }
-
 .send-message {
   float: right; }
+  @media (max-width: 600px) {
+    .send-message {
+      float: none;
+      text-align: center;
+      margin-bottom: 30px; } }
   .send-message span {
     background: url("../../images/sprite.png") no-repeat -226px -121px;
     width: 23px;
@@ -7845,6 +7871,9 @@ body {
     position: absolute;
     left: -35px;
     top: 4px; }
+    @media (max-width: 600px) {
+      .send-message span {
+        left: 30%; } }
   .send-message strong {
     display: block;
     position: relative; }
@@ -7854,6 +7883,10 @@ body {
 
 .icon-discuss {
   display: block; }
+  @media (max-width: 600px) {
+    .icon-discuss {
+      display: flex;
+      justify-content: space-around; } }
   .icon-discuss a {
     margin-bottom: 25px; }
   .icon-discuss .be {
@@ -7886,12 +7919,16 @@ body {
 .map {
   border-bottom: 5px solid #062033; }
   .map img {
-    width: 100%; }
+    width: 100%;
+    background: cover; }
 
 /*FOOTER*/
 .footer-wrapper {
   background: #1ea78d;
   padding-top: 98px; }
+  @media (max-width: 600px) {
+    .footer-wrapper {
+      padding-top: 10px; } }
 
 .brandi h1 {
   font: 28px 'Pacifico', cursive; }
@@ -7906,6 +7943,10 @@ body {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 47px; }
+  @media (max-width: 600px) {
+    .subscribe h2,
+    .explore h2 {
+      margin-bottom: 20px; } }
 
 .subscribe input[type="search"],
 .explore input[type="search"] {
@@ -7926,10 +7967,17 @@ body {
   position: absolute;
   right: 30px;
   top: 78px; }
+  @media (max-width: 600px) {
+    .subscribe span,
+    .explore span {
+      top: 52px; } }
 
 .explore h2 {
   margin-bottom: 35px;
   padding-left: 14px; }
+  @media (max-width: 600px) {
+    .explore h2 {
+      margin-bottom: 20px; } }
 
 .explore-section {
   display: flex;
@@ -7944,11 +7992,18 @@ body {
 
 .created {
   margin-top: 47px; }
+  @media (max-width: 600px) {
+    .created {
+      margin-top: 10px;
+      text-align: center; } }
   .created strong {
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 55px;
     display: block; }
+    @media (max-width: 600px) {
+      .created strong {
+        margin-bottom: 10px; } }
   .created span {
     background: url("../../images/sprite.png") no-repeat -129px -20px;
     width: 18px;
